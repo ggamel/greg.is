@@ -10,3 +10,4 @@ This is the source for my personal/professional website.
 - Retina (prefer SVGs)
 - Pages and Posts get custom layouts/designs (*if desired*)
 - All images get saved as originals
+- Experiments are easy to launch and share
