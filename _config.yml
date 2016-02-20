@@ -6,6 +6,9 @@ collections:
   posts:
     title: Posts
     output: true
+  reading-list:
+    title: Reading List
+    output: true
   uploads:
     title: Uploads
     output: true
