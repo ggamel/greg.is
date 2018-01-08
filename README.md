@@ -14,3 +14,4 @@ This is the source for my primary website.
 - Continuous Integration
 - SSL
 - Micro & Regular Blog
+- Analytics only if they behave (see: https://philipwalton.com/articles/the-google-analytics-setup-i-use-on-every-site-i-build/)
