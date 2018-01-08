@@ -1,13 +1,16 @@
-# greg.is (2016 edition)
+# greg.is (2018 edition)
 
-This is the source for my personal/professional website.
+This is the source for my primary website.
 
 ## Rules for the site
 
 - Static files
 - Easy to change as needed
-- Current with latest Jekyll (+Siteleaf) features
-- Retina (prefer SVGs)
-- Pages and Posts get option for custom layouts/designs
-- All images get saved as originals
+- React
+- Prefer SVGs
+- Pages and Posts have the option for custom layouts/designs
+- All images get saved as originals / process to minify as needed
 - Experiments are easy to launch and share
+- Continuous Integration
+- SSL
+- Micro & Regular Blog
