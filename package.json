@@ -7,10 +7,6 @@
     "start": "gen -Dop 8080",
     "build": "gen src -d dist"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ggamel/greg.is.git"
-  },
   "keywords": [
     "personal",
     "blog",
