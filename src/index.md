@@ -18,9 +18,3 @@ twitter:
 ### Hardware & Software Products  —  UX & Usability Research  —  No-fuss
 
 ### 💚s green chile  —  !|!|
-
-- [About](about)
-
----
-
-[Made by Greg Gamel](https://greg.is/)
