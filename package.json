@@ -1,6 +1,6 @@
 {
   "name": "2018.greg.is",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Primary site of Greg Gamel",
   "scripts": {
     "test": "which gen",

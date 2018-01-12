@@ -11,15 +11,13 @@ twitter:
 
 # Greg Gamel
 
-Comprehensive Designer
+## Comprehensive Designer
 
-## H2
 
-Hardware & Software Products  —  UX & Usability Research  —  No-fuss
 
-## H3
+### Hardware & Software Products  —  UX & Usability Research  —  No-fuss
 
-💚s green chile  —  !|!|
+### 💚s green chile  —  !|!|
 
 - [About](about)
 
