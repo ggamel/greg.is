@@ -1,5 +1,5 @@
 ---
-title: Home page
+title: Greg Gamel — Comprehensive Designer
 layout: layout
 twitter:
   card: summary
