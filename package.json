@@ -4,7 +4,7 @@
   "description": "Primary site of Greg Gamel",
   "scripts": {
     "test": "which gen",
-    "start": "gen -Dop 8080",
+    "start": "gen src -Dop 8080",
     "build": "gen src -d dist"
   },
   "keywords": [
