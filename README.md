@@ -1,17 +1,10 @@
-# greg.is (2018 edition)
+# gatsby-starter-hello-world
+Starter with the bare essentials needed for a [Gatsby](https://www.gatsbyjs.org/) site
 
-This is the source for my primary website.
+Install this starter (assuming Gatsby is installed) by running from your CLI:
+```
+gatsby new gatsby-site https://github.com/gatsbyjs/gatsby-starter-hello-world
+```
 
-## Rules for the site
-
-- Static files
-- Easy to change as needed
-- React
-- Prefer SVGs
-- Pages and Posts have the option for custom layouts/designs
-- All images get saved as originals / process to minify as needed
-- Experiments are easy to launch and share
-- Continuous Integration
-- SSL
-- Micro & Regular Blog
-- Analytics only if they behave (see: https://philipwalton.com/articles/the-google-analytics-setup-i-use-on-every-site-i-build/)
+## Running in development
+`gatsby develop`
