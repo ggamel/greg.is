@@ -1,28 +1,15 @@
 {
-  "name": "2018.greg.is",
-  "version": "0.0.2",
-  "description": "Primary site of Greg Gamel",
-  "scripts": {
-    "test": "which gen",
-    "start": "gen src -Dop 8080",
-    "build": "gen src -d dist"
-  },
-  "keywords": [
-    "personal",
-    "blog",
-    "portfolio",
-    "fun",
-    "reactjs",
-    "art",
-    "creative-coding"
-  ],
-  "author": "Greg Gamel",
+  "name": "gatsby-starter-hello-world",
+  "description": "Gatsby hello world starter",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/ggamel/greg.is/issues"
+  "scripts": {
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve"
   },
-  "homepage": "https://github.com/ggamel/greg.is#readme",
-  "devDependencies": {
-    "@compositor/gen": "^1.0.0-4"
+  "dependencies": {
+    "gatsby": "next",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
   }
 }
