@@ -1,10 +1,27 @@
-# gatsby-starter-hello-world
-Starter with the bare essentials needed for a [Gatsby](https://www.gatsbyjs.org/) site
+# Gatsby Starter MDX Basic
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
-```
-gatsby new gatsby-site https://github.com/gatsbyjs/gatsby-starter-hello-world
+View this starter [live on Netlify](https://gatsby-starter-mdx-basic.netlify.com/)
+
+This starter build MDX support into the
+[gatsby-default-starter](https://github.com/gatsbyjs/gatsby-starter-default). Its
+README also applies here.
+
+1. Create a new Gatsby site using this starter
+
+```sh
+gatsby new my-site https://github.com/ChristopherBiscardi/gatsby-starter-mdx-basic
 ```
 
-## Running in development
-`gatsby develop`
+2. Install dependencies
+
+```sh
+yarn
+```
+
+3. Run the develop script
+
+```sh
+yarn develop
+```
+
+4. Edit Page 2 in `src/pages/page-2.mdx`
