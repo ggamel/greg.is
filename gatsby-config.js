@@ -21,6 +21,13 @@ module.exports = {
         path: `${__dirname}/src/images`
       }
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}/src/pages`
+      }
+    },
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
     {
@@ -43,7 +50,9 @@ module.exports = {
         // unique site id (optional, required for Fathom v1.1.0+)
         siteId: "KPTRO"
       }
-    }
+    },
+    "gatsby-plugin-styled-components",
+    "gatsby-plugin-netlify"
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
