@@ -2,7 +2,7 @@
   "name": "greg.is",
   "description": "2019.greg.is",
   "version": "1.0.0",
-  "author": {"Greg Gamel <g@greg.is> (https://www.greg.is)"},
+  "author": "Greg Gamel <g@greg.is> (https://www.greg.is)",
   "scripts": {
     "build": "gatsby build",
     "clean": "rm -rf node_modules .cache public",
