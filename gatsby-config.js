@@ -10,7 +10,10 @@ module.exports = {
     {
       resolve: `gatsby-mdx`,
       options: {
-        defaultLayouts: { default: path.resolve("./src/components/layout.js") }
+        defaultLayouts: {
+          default: path.resolve("./src/components/layout.tsx"),
+          posts: require.resolve("./src/components/posts-layout.tsx")
+        }
       }
     },
     "gatsby-plugin-react-helmet",
@@ -24,8 +27,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `pages`,
-        path: `${__dirname}/src/pages`
+        name: `posts`,
+        path: `${__dirname}/src/posts`
       }
     },
     "gatsby-transformer-sharp",
@@ -52,6 +55,7 @@ module.exports = {
       }
     },
     "gatsby-plugin-styled-components",
+    "gatsby-plugin-typescript",
     "gatsby-plugin-netlify"
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
