@@ -34,8 +34,8 @@ exports.onCreateNode = ({ node, actions }) => {
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
 
-  const postTemplate = require.resolve("./src/templates/post.js");
-  const categoryTemplate = require.resolve("./src/templates/category.js");
+  const postTemplate = require.resolve("./src/templates/post.tsx");
+  const categoryTemplate = require.resolve("./src/templates/category.tsx");
 
   const result = await wrapper(
     graphql(`
