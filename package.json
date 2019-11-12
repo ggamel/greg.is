@@ -1,6 +1,8 @@
 {
-  "name": "with-typescript",
+  "name": "greg.is",
+  "description": "Greg Gamel's Personal Website",
   "version": "1.0.0",
+  "author": "Greg Gamel <g@greg.is> (https://www.greg.is)",
   "scripts": {
     "dev": "next",
     "build": "next build",
