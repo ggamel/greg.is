@@ -96,6 +96,107 @@ const Layout: React.FunctionComponent<Props> = ({
             scroll-behavior: auto !important;
           }
         }
+
+        /* ---------------- */
+        /* ---------------- */
+        :root {
+          --t0: 4.5rem;
+          --t1: 4rem;
+          --t2: 2.5rem;
+          --t3: 2rem;
+          --p0: 1.687rem;
+          --p1: 1.25rem;
+          --p2: 1rem;
+          --p3: 0.75rem;
+          --gutter: 3.125rem;
+        }
+
+        @media (max-width: 730px) {
+          :root {
+            --t0: 2.67rem;
+            --t1: 2.67rem;
+            --t2: 2rem;
+            --t3: 1.67rem;
+            --p0: 1.5rem;
+            --p1: 1.167rem;
+            --p2: 1rem;
+            --p3: 1rem;
+          }
+        }
+
+        @media (max-width: 1080px) {
+          :root {
+            --gutter: 3vw;
+          }
+        }
+
+        @media (max-width: 670px) {
+          :root {
+            --gutter: 20px;
+          }
+        }
+
+        *,
+        *:before,
+        *:after {
+          box-sizing: inherit;
+        }
+
+        ::selection {
+          background: rgba(0, 136, 85, 0.3);
+        }
+
+        html {
+          text-rendering: optimizeLegibility;
+          font-feature-settings: "kern" 1;
+          font-kerning: normal;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          font-family: -apple-system, BlinkMacSystemFont, -system-ui,
+            "avenir next", avenir, helvetica, "helvetica neue", ubuntu, roboto,
+            noto, "segoe ui", arial, sans-serif;
+          background: #fff;
+          font-size: 16px;
+          font-size: 1.1111111vw;
+          word-break: break-word;
+        }
+
+        @media (max-width: 1080px) {
+          html {
+            font-size: 12px;
+          }
+        }
+
+        body {
+          box-sizing: border-box;
+        }
+
+        a {
+          -webkit-text-decoration: underline;
+          text-decoration: underline;
+          cursor: pointer;
+          color: inherit;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        label,
+        button,
+        input {
+          font-family: -apple-system, BlinkMacSystemFont, -system-ui,
+            "avenir next", avenir, helvetica, "helvetica neue", ubuntu, roboto,
+            noto, "segoe ui", arial, sans-serif;
+          margin-top: 0;
+          margin-bottom: 0.2em;
+        }
+
+        img {
+          max-width: 100%;
+        }
       `}
     </style>
     <header>
