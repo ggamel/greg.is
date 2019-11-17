@@ -10,7 +10,7 @@ jobs:
         with:
           urls: |
             https://greg.is/
-        temporaryPublicStorage: true
+          temporaryPublicStorage: true
       - name: Save results
         uses: actions/upload-artifact@v1
         with:
