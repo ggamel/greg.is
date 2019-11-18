@@ -2,6 +2,8 @@ import * as React from "react";
 import Link from "next/link";
 import Head from "next/head";
 
+import Logo from "../components/Logo";
+
 type Props = {
   title?: string;
 };
@@ -15,6 +17,7 @@ const Layout: React.FunctionComponent<Props> = ({
       <title>{title}</title>
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      <link rel="icon shortcut" type="image/x-icon" href=""></link>
     </Head>
     <style jsx global>
       {`
@@ -145,7 +148,10 @@ const Layout: React.FunctionComponent<Props> = ({
         ::selection {
           background: rgba(0, 136, 85, 0.3);
         }
-
+        html {
+          line-height: 1.15;
+          -webkit-text-size-adjust: 100%;
+        }
         html {
           text-rendering: optimizeLegibility;
           font-feature-settings: "kern" 1;
@@ -197,9 +203,39 @@ const Layout: React.FunctionComponent<Props> = ({
         img {
           max-width: 100%;
         }
+
+        .xl {
+          font-size: var(--t0);
+          line-height: 1.2;
+        }
+        h1 {
+          font-size: var(--t1);
+        }
+        h2 {
+          font-size: var(--t2);
+        }
+        h3 {
+          font-size: var(--t3);
+        }
+        body {
+          background: linear-gradient(
+            270deg,
+            rgb(32, 18, 106) 0%,
+            rgb(114, 4, 193) 100%
+          );
+          color: #fff;
+        }
       `}
     </style>
+
     <header>
+      <div>
+        <Link href="/">
+          <a>
+            <Logo />
+          </a>
+        </Link>
+      </div>
       <nav>
         <Link href="/">
           <a>Home</a>
@@ -209,12 +245,21 @@ const Layout: React.FunctionComponent<Props> = ({
           <a>About</a>
         </Link>{" "}
         |{" "}
+        <Link href="/styles">
+          <a>Styles</a>
+        </Link>{" "}
+        |{" "}
       </nav>
+      <div>designer + developer of hardware & software products</div>
     </header>
-    {children}
+    <main>{children}</main>
     <footer>
-      <hr />
-      <span>Copyright © 2019 Greg Gamel</span>
+      <Link href="/">
+        <a>
+          <Logo />
+        </a>
+      </Link>
+      <div>Copyright © 2019 Greg Gamel</div>
     </footer>
   </div>
 );
