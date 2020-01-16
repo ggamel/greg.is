@@ -3,7 +3,7 @@ import { withRouter } from "next/router";
 import classNames from "classnames";
 import { SkipNavLink } from "@reach/skip-nav";
 
-import Container from "./container";
+import Container from "./Container";
 import Logo from "./Logo";
 
 const Nav = ({ className, router }) => {
