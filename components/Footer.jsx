@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx, css, Styled, useColorMode } from "theme-ui";
 import { Global } from "@emotion/core";
-import Link from "next/link";
+import Link from "./Link";
 
 const Footer = ({}) => (
   <footer
