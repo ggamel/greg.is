@@ -12,25 +12,11 @@ const WorkPage = () => (
       <SkipNavContent tabIndex="0" />
       <Header />
       <main>
-        <h1>About Greg</h1>
-        <p>
-          Greg Gamel is a designer and developer, currently working for
-          EyeGuide.
-        </p>
-
-        <h2>Current</h2>
-        <p></p>
-        <h2>Skills</h2>
-        <p></p>
-        <h3>Client-side</h3>
-        <p></p>
-        <h3>Server-side</h3>
-        <p></p>
-        <h3>Server-side</h3>
-        <p></p>
+        <h1>Work</h1>
+        <p>coming soon</p>
       </main>
     </Page>
-    <Footer></Footer>
+    <Footer />
   </>
 );
 

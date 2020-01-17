@@ -19,7 +19,8 @@ const StylesPage = ({ headerActive }) => (
         <main>
           <h1 className="xl">Styles Used on this Site</h1>
           <p className="p1">
-            These are the styles and components used on this website.
+            These are the styles and components used on this website. Work in
+            progress.
           </p>
           <hr />
           <h1 className="xl">Heading XL</h1>
@@ -62,13 +63,13 @@ const StylesPage = ({ headerActive }) => (
 
           <hr />
 
-          <video></video>
+          <video />
           <hr />
-          <img src="https://placekitten.com/1024/1024"></img>
+          <img src="https://placekitten.com/1024/1024" />
         </main>
       </article>
     </Page>
-    <Footer></Footer>
+    <Footer />
   </>
 );
 
