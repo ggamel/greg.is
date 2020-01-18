@@ -24,16 +24,16 @@ const Footer = ({}) => (
       <Link href="/" sx={{ variant: "styles.navlink", p: 2 }}>
         <a>Home</a>
       </Link>
-      <Link href="/work" sx={{ variant: "styles.navlink", p: 2 }}>
+      <Link href="/about" sx={{ variant: "styles.navlink", p: 2 }}>
         <a>About</a>
       </Link>
       <Link href="/writing" sx={{ variant: "styles.navlink", p: 2 }}>
-        <a> Links</a>
+        <a>Writing</a>
       </Link>
-      <Link href="/about" sx={{ variant: "styles.navlink", p: 2 }}>
+      <Link href="/styles" sx={{ variant: "styles.navlink", p: 2 }}>
         <a>Styles</a>
       </Link>
-      <Link href="/products" sx={{ variant: "styles.navlink", p: 2 }}>
+      <Link href="/work" sx={{ variant: "styles.navlink", p: 2 }}>
         <a>Work</a>
       </Link>
       <Link href="/community" sx={{ variant: "styles.navlink", p: 2 }}>
@@ -54,8 +54,8 @@ const Footer = ({}) => (
       <Link href="/contact" sx={{ variant: "styles.navlink", p: 2 }}>
         <a>Contact</a>
       </Link>
-      <Link href="/community" sx={{ variant: "styles.navlink", p: 2 }}>
-        <a>Community</a>
+      <Link href="/links" sx={{ variant: "styles.navlink", p: 2 }}>
+        <a>Links</a>
       </Link>
     </div>
     <div

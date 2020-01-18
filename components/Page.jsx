@@ -21,7 +21,7 @@ const Page = ({ children, title, description }) => (
     </Head>
     <Global styles={reset} />
     <Global styles={vars} />
-    <Global styles={typography} />
+    {/* <Global styles={typography} /> */}
     <Global
       styles={css`
         * {
