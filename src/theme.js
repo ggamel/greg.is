@@ -3,6 +3,7 @@ export default {
   ...dark,
   useCustomProperties: true,
   useColorSchemeMediaQuery: true,
+  initialColorModeName: "dark",
   colors: {
     text: "#fff",
     background: "#000",
@@ -19,7 +20,7 @@ export default {
   },
   fontSizes: [12, 14, 16, 18, 24, 32, 48, 64, 72],
   fonts: {
-    body: "system-ui, sans-serif",
+    // body: "system-ui, sans-serif",
     heading: "inherit"
   },
   lineHeights: {
@@ -29,7 +30,7 @@ export default {
   styles: {
     ...dark.styles,
     root: {
-      fontFamily: "body",
+      // fontFamily: "body",
       color: "text",
       bg: "background"
     },
