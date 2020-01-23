@@ -129,7 +129,7 @@ const Page = ({ children, title, description }) => {
         grid-column-end: 3;
       } */}
 
-      hr {
+        hr {
             width: 100%;
             border-color: #333;
           }
