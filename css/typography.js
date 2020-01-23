@@ -3,21 +3,18 @@ import { css } from "@emotion/core";
 
 const typography = css`
   html {
-    line-height: 1.15;
-    -webkit-text-size-adjust: 100%;
-  }
-  html {
     text-rendering: optimizeLegibility;
     font-feature-settings: "kern" 1;
     font-kerning: normal;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-family: -apple-system, BlinkMacSystemFont, -system-ui, "avenir next",
+    font-family: -apple-system, BlinkMacSystemFont, system-ui, "avenir next",
       avenir, helvetica, "helvetica neue", ubuntu, roboto, noto, "segoe ui",
       arial, sans-serif;
     background: var(--gg-background);
-    font-size: 16px;
-    font-size: 1.1111111vw;
+    ${"" /* font-size: 1.1111111vw; */}
+    ${"" /* line-height: 1.15; */}
+    -webkit-text-size-adjust: 100%;
   }
 
   .xl {
