@@ -4,14 +4,14 @@ import { jsx, useColorMode, Styled } from "theme-ui";
 import Link from "./Link";
 
 const Footer = ({}) => {
-  const [colorMode, setColorMode] = useColorMode();
+  const [mode, setMode] = useColorMode();
   return (
     <footer
       sx={{
         fontSize: 1,
         variant: "styles.footer",
-        background: colorMode === "default" ? "#111" : "#111", // logic left for changes later
-        color: colorMode === "default" ? "#fff" : "#fff" // logic left for changes later
+        background: mode === "default" ? "#111" : "#111", // logic left for changes later
+        color: mode === "default" ? "#fff" : "#fff" // logic left for changes later
       }}
     >
       <div
@@ -76,11 +76,11 @@ const Footer = ({}) => {
             pr: 3
           }}
           onClick={e => {
-            setColorMode(colorMode === "default" ? "light" : "default");
+            setMode(mode === "default" ? "light" : "default");
           }}
         >
           {" "}
-          {colorMode === "default" ? "🔆" : "🌙"}
+          {mode === "default" ? "🔆" : "🌙"}
         </a>
         <Link href="https://github.com/ggamel" sx={{ color: "inherit" }}>
           <Styled.a>GitHub</Styled.a>
