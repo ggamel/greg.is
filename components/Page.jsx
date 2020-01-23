@@ -28,7 +28,9 @@ const Page = ({ children, title, description }) => {
           * {
             transition: background-color 0.4s ease;
           }
-
+          html {
+            background: var(--gg-background);
+          }
           h1,
           h2,
           h3,

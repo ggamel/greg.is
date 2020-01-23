@@ -3,6 +3,7 @@ import { css } from "@emotion/core";
 
 const vars = css`
   :root {
+    --gg-background: #000;
     --gg-pgrad: linear-gradient(
       180deg,
       rgb(32, 18, 106) 0%,
