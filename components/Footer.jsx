@@ -1,5 +1,6 @@
 /** @jsx jsx */
-import { jsx, useColorMode } from "theme-ui";
+import { jsx, useColorMode, Styled } from "theme-ui";
+
 import Link from "./Link";
 
 const Footer = ({}) => {
@@ -9,7 +10,8 @@ const Footer = ({}) => {
       sx={{
         fontSize: 1,
         variant: "styles.footer",
-        background: "#111"
+        background: colorMode === "default" ? "#111" : "#111", // logic left for changes later
+        color: colorMode === "default" ? "#fff" : "#fff" // logic left for changes later
       }}
     >
       <button
@@ -46,40 +48,40 @@ const Footer = ({}) => {
         }}
       >
         <Link href="/" sx={{ variant: "styles.navlink", p: 2 }}>
-          <a>Home</a>
+          <Styled.a>Home</Styled.a>
         </Link>
         <Link href="/about" sx={{ variant: "styles.navlink", p: 2 }}>
-          <a>About</a>
+          <Styled.a>About</Styled.a>
         </Link>
         <Link href="/writing" sx={{ variant: "styles.navlink", p: 2 }}>
-          <a>Writing</a>
+          <Styled.a>Writing</Styled.a>
         </Link>
         <Link href="/styles" sx={{ variant: "styles.navlink", p: 2 }}>
-          <a>Styles</a>
+          <Styled.a>Styles</Styled.a>
         </Link>
         <Link href="/work" sx={{ variant: "styles.navlink", p: 2 }}>
-          <a>Work</a>
+          <Styled.a>Work</Styled.a>
         </Link>
         <Link href="/community" sx={{ variant: "styles.navlink", p: 2 }}>
-          <a>Projects</a>
+          <Styled.a>Projects</Styled.a>
         </Link>
         <Link href="/support" sx={{ variant: "styles.navlink", p: 2 }}>
-          <a>APOD</a>
+          <Styled.a>APOD</Styled.a>
         </Link>
         <Link href="/contact" sx={{ variant: "styles.navlink", p: 2 }}>
-          <a>Grad</a>
+          <Styled.a>Grad</Styled.a>
         </Link>
         <Link href="/support" sx={{ variant: "styles.navlink", p: 2 }}>
-          <a>Daily.is</a>
+          <Styled.a>Daily.is</Styled.a>
         </Link>
         <Link href="/products" sx={{ variant: "styles.navlink", p: 2 }}>
-          <a>Experiments</a>
+          <Styled.a>Experiments</Styled.a>
         </Link>
         <Link href="/contact" sx={{ variant: "styles.navlink", p: 2 }}>
-          <a>Contact</a>
+          <Styled.a>Contact</Styled.a>
         </Link>
         <Link href="/links" sx={{ variant: "styles.navlink", p: 2 }}>
-          <a>Links</a>
+          <Styled.a>Links</Styled.a>
         </Link>
       </div>
       <div
