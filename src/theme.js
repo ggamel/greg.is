@@ -7,14 +7,11 @@ export default {
   colors: {
     text: "#fff",
     background: "#000",
-    primary: "#07c",
-    secondary: "#609",
+
     modes: {
       light: {
         text: "#222",
-        background: "#fff",
-        primary: "#0cf",
-        secondary: "#90c"
+        background: "#fff"
       }
     }
   },
@@ -83,8 +80,7 @@ export default {
       textDecoration: "none",
       ":hover": {
         color: "secondary",
-        textDecoration: "underline",
-        fontWeight: 900
+        textDecoration: "underline"
       }
     }
   }
