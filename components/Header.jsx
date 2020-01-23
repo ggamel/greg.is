@@ -1,10 +1,9 @@
 /** @jsx jsx */
 import { jsx, css, Styled, useColorMode } from "theme-ui";
-import { Global } from "@emotion/core";
+
 import Link from "./Link";
 
 import Logo from "../components/Logo";
-import { render } from "react-dom";
 
 const header = css`
   background: "pink";
@@ -42,7 +41,7 @@ const Header = ({ children }) => {
         }}
       >
         <Link href="/">
-          <a>
+          <Styled.a>
             <Logo />
             <span
               sx={{
@@ -55,7 +54,7 @@ const Header = ({ children }) => {
             >
               Home
             </span>
-          </a>
+          </Styled.a>
         </Link>
       </div>
       <div
@@ -66,24 +65,24 @@ const Header = ({ children }) => {
         }}
       >
         <Link href="/about">
-          <a
+          <Styled.a
             sx={{
               variant: "styles.navlink",
               p: 2
             }}
           >
             About
-          </a>
+          </Styled.a>
         </Link>
         <Link href="/writing">
-          <a
+          <Styled.a
             sx={{
               variant: "styles.navlink",
               p: 2
             }}
           >
             Writing
-          </a>
+          </Styled.a>
         </Link>
       </div>
       <div
@@ -95,24 +94,24 @@ const Header = ({ children }) => {
         }}
       >
         <Link href="/styles">
-          <a
+          <Styled.a
             sx={{
               variant: "styles.navlink",
               p: 2
             }}
           >
             Styles
-          </a>
+          </Styled.a>
         </Link>
         <Link href="/work">
-          <a
+          <Styled.a
             sx={{
               variant: "styles.navlink",
               p: 2
             }}
           >
             Work
-          </a>
+          </Styled.a>
         </Link>
       </div>
     </header>
