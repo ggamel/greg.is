@@ -85,8 +85,8 @@ const reset = css`
   // additions
 
   a {
-    ${"" /* -webkit-text-decoration: underline;
-    text-decoration: underline; */}
+    -webkit-text-decoration: underline;
+    text-decoration: underline;
     cursor: pointer;
     color: inherit;
   }
