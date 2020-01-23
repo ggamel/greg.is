@@ -23,6 +23,7 @@ const IndexPage = ({ headerActive }) => {
             <button
               sx={{
                 appearance: "none",
+                background: colorMode === "default" ? "#fff" : "red",
                 display: "inline-block",
                 textAlign: "center",
                 lineHeight: "inherit",
@@ -41,7 +42,7 @@ const IndexPage = ({ headerActive }) => {
               }}
             >
               {" "}
-              Toggle {colorMode === "default" ? "Light" : "Dark"}
+              {colorMode === "default" ? "🔆" : "🌙"}
             </button>
             <h1 className="xl">Greg Gamel</h1>
             <p>
