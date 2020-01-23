@@ -14,29 +14,6 @@ const Footer = ({}) => {
         color: colorMode === "default" ? "#fff" : "#fff" // logic left for changes later
       }}
     >
-      <button
-        sx={{
-          appearance: "none",
-          display: "inline-block",
-          textAlign: "center",
-          lineHeight: "inherit",
-          textDecoration: "none",
-          fontSize: "inherit",
-          fontWeight: "bold",
-          m: 0,
-          px: 3,
-          py: 2,
-          border: 0,
-          borderRadius: 4,
-          variant: "buttons.primary"
-        }}
-        onClick={e => {
-          setColorMode(colorMode === "default" ? "light" : "default");
-        }}
-      >
-        {" "}
-        {colorMode === "default" ? "🔆" : "🌙"}
-      </button>
       <div
         sx={{
           display: "grid",
@@ -84,6 +61,7 @@ const Footer = ({}) => {
           <Styled.a>Links</Styled.a>
         </Link>
       </div>
+
       <div
         sx={{
           display: "flex",
@@ -91,12 +69,25 @@ const Footer = ({}) => {
           p: 3
         }}
       >
+        <a
+          sx={{
+            textAlign: "center",
+            textDecoration: "none",
+            pr: 3
+          }}
+          onClick={e => {
+            setColorMode(colorMode === "default" ? "light" : "default");
+          }}
+        >
+          {" "}
+          {colorMode === "default" ? "🔆" : "🌙"}
+        </a>
         <Link href="https://github.com/ggamel" sx={{ color: "inherit" }}>
-          <a>GitHub</a>
+          <Styled.a>GitHub</Styled.a>
         </Link>
         <div sx={{ mx: 1 }} />
         <Link href="https://twitter.com/ggamel" sx={{ color: "inherit" }}>
-          <a>Twitter</a>
+          <Styled.a>Twitter</Styled.a>
         </Link>
         <div sx={{ mx: 1 }} />© 2020 Greg Gamel
       </div>
