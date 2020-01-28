@@ -5,10 +5,11 @@ export default {
   useColorSchemeMediaQuery: true,
   initialColorModeName: "dark",
   colors: {
-    text: "#fff",
-    background: "#000",
-
     modes: {
+      dark: {
+        text: "#fff",
+        background: "#000"
+      },
       light: {
         text: "#222",
         background: "#fff"
