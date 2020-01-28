@@ -6,27 +6,29 @@ import Link from "./Link";
 import Logo from "../components/Logo";
 
 const header = css`
-  background: "pink";
-  position: sticky;
-  top: 0;
-  zindex: 100;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
   -webkit-backdrop-filter: saturate(100%) blur(40px);
   backdrop-filter: saturate(100%) blur(12px);
 `;
 
 const Header = ({ children }) => {
+  const [mode] = useColorMode();
   return (
     <header
       sx={{
         display: "grid",
         gridGap: 3,
         mx: "auto",
-        px: 3,
-        py: 3,
+        px: 2,
+        py: 2,
         gridAutoFlow: "row",
         gridTemplateColumns: ["repeat(2, 1fr)", "repeat(3, 1fr)"],
-        variant: "styles.header"
+        variant: "styles.header",
+        borderBottom: mode === "dark" ? "1px solid #222" : "1px solid #eee",
+        position: "sticky",
+        top: 0,
+        zIndex: 100
+        // backgroundColor:
+        //   mode === "dark" ? "rgba(0,0,0,0.1)" : "rgba(255,255,255,0.1)"
       }}
       css={header}
     >
