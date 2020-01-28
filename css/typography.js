@@ -8,11 +8,6 @@ const typography = css`
     font-kerning: normal;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    ${
-      "" /* font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif; */
-    }
-    ${"" /* font-size: 1.1111111vw; */}
-    ${"" /* line-height: 1.15; */}
     -webkit-text-size-adjust: 100%;
   }
 
