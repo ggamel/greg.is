@@ -62,10 +62,6 @@ const Page = ({ children, title, description }) => {
             shape-rendering: geometricprecision;
           }
 
-          ${"" /* body {
-          background: var(--gg-background);
-          color: var(--gg-color);
-        } */}
           .visually-hidden {
             clip: rect(0 0 0 0);
             height: 1px;
@@ -99,37 +95,7 @@ const Page = ({ children, title, description }) => {
             font-weight: 900;
           }
 
-          ${"" /* article {
-        padding-left: var(--gutter);
-        padding-right: var(--gutter);
-        margin-top: 6.25rem;
-      } */}
-          ${"" /* main {
-        margin-top: calc(var(--gutter) / 2);
-        display: grid;
-        grid-template-columns: 1fr 5fr 1fr;
-        font-size: var(--p1);
-        font-weight: 400;
-        line-height: 1.4;
-      }
-      @media (max-width: 960px) {
-        main {
-          grid-template-columns: 6.25rem 1fr 6.25rem;
-        }
-      }
-
-      @media (max-width: 730px) {
-        main {
-          grid-template-columns: 0 1fr 0;
-        }
-      }
-
-      main > * {
-        grid-column-start: 2;
-        grid-column-end: 3;
-      } */}
-
-        hr {
+          hr {
             width: 100%;
             border-color: #333;
           }
@@ -137,14 +103,10 @@ const Page = ({ children, title, description }) => {
           dl {
             display: grid;
             grid-template-columns: auto 1fr;
-            grid-gap: ;
+            grid-gap: 2;
           }
 
-          /* a {
-          text-decoration: none;
-        } */
           .selected {
-            // color: red;
             font-weight: 900;
           }
         `}
