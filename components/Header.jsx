@@ -23,7 +23,7 @@ const Header = ({ children }) => {
         gridAutoFlow: "row",
         gridTemplateColumns: ["repeat(2, 1fr)", "repeat(3, 1fr)"],
         variant: "styles.header",
-        borderBottom: mode === "night" ? "1px solid #222" : "1px solid #eee",
+        borderBottom: mode === "dark" ? "1px solid #222" : "1px solid #eee",
         position: "sticky",
         top: 0,
         zIndex: 100

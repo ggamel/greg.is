@@ -21,7 +21,7 @@ const IndexPage = ({ headerActive }) => {
 
         <Box
           sx={{
-            background: mode === "night" ? "#111" : "#fafafa",
+            background: mode === "dark" ? "#111" : "#fafafa",
             pb: "1px"
           }}
         >

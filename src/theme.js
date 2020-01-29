@@ -3,10 +3,10 @@ export default {
   ...dark,
   useCustomProperties: true,
   useColorSchemeMediaQuery: true,
-  initialColorModeName: "night",
+  // initialColorModeName: "dark",
   colors: {
     modes: {
-      night: {
+      dark: {
         text: "#fff",
         background: "#000"
       },
