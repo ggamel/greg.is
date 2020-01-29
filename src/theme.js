@@ -1,9 +1,7 @@
-import { dark } from "@theme-ui/presets";
 export default {
-  ...dark,
   useCustomProperties: true,
   useColorSchemeMediaQuery: true,
-  // initialColorModeName: "dark",
+  initialColorModeName: "dark",
   colors: {
     modes: {
       dark: {
@@ -27,7 +25,6 @@ export default {
     heading: 8
   },
   styles: {
-    ...dark.styles,
     root: {
       fontFamily: "body",
       color: "text",
