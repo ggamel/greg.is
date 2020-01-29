@@ -8,8 +8,8 @@ const Footer = ({}) => {
   return (
     <div
       sx={{
-        borderTop: mode === "dark" ? "1px solid #333" : "1px solid #eee",
-        background: mode === "dark" ? "#000" : "#fff" // logic left for changes later
+        borderTop: mode === "night" ? "1px solid #333" : "1px solid #eee",
+        background: mode === "night" ? "#000" : "#fff" // logic left for changes later
       }}
     >
       <div
@@ -24,7 +24,7 @@ const Footer = ({}) => {
             fontSize: 1,
             variant: "styles.footer",
 
-            color: mode === "dark" ? "#fff" : "#000" // logic left for changes later
+            color: mode === "night" ? "#fff" : "#000" // logic left for changes later
           }}
         >
           <div
@@ -90,11 +90,11 @@ const Footer = ({}) => {
             pr: 3
           }}
           onClick={e => {
-            const next = mode === "dark" ? "light" : "dark";
+            const next = mode === "night" ? "light" : "night";
             setMode(next);
           }}
         >
-          {mode === "dark" ? "🔆" : "🌙"}
+          {mode === "night" ? "🔆" : "🌙"}
         </a>
         <a href="https://github.com/ggamel" sx={{ color: "inherit" }}>
           <Styled.a>GitHub</Styled.a>
