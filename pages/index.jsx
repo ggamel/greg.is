@@ -19,7 +19,12 @@ const IndexPage = ({ headerActive }) => {
         <SkipNavContent tabIndex="0" />
         <Header />
 
-        <Box sx={{ background: mode === "dark" ? "#111" : "#fafafa" }}>
+        <Box
+          sx={{
+            background: mode === "dark" ? "#111" : "#fafafa",
+            pb: "1px"
+          }}
+        >
           <article
             sx={{
               minHeight: "100vh",
