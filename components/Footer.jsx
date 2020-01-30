@@ -56,7 +56,7 @@ const Footer = ({}) => {
               <Styled.a>Projects</Styled.a>
             </Link>
             <Link href="/support" sx={{ variant: "styles.navlink", p: 2 }}>
-              <Styled.a>APOD</Styled.a>
+              <Styled.a href="https://apod.now.sh/">APOD</Styled.a>
             </Link>
             <Link href="/contact" sx={{ variant: "styles.navlink", p: 2 }}>
               <Styled.a>Grad</Styled.a>
@@ -102,6 +102,10 @@ const Footer = ({}) => {
         <div sx={{ mx: 1 }} />
         <a href="https://twitter.com/ggamel" sx={{ color: "inherit" }}>
           <Styled.a>Twitter</Styled.a>
+        </a>
+        <div sx={{ mx: 1 }} />
+        <a href="mailto:g@greg.is" sx={{ color: "inherit" }}>
+          <Styled.a>Email</Styled.a>
         </a>
         <div sx={{ mx: 1 }} />© 2020 Greg Gamel
       </div>
