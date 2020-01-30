@@ -95,14 +95,14 @@ const Header = ({ children }) => {
           order: 2
         }}
       >
-        <Link href="/styles">
+        <Link href="/projects">
           <Styled.a
             sx={{
               variant: "styles.navlink",
               p: 2
             }}
           >
-            Styles
+            Projects
           </Styled.a>
         </Link>
         <Link href="/work">
