@@ -37,23 +37,22 @@ const IndexPage = ({ headerActive }) => {
             }}
           >
             <main>
-              <h1 className="xl">Greg Gamel</h1>
-              <p>
-                Currently building <a href="https://eye.guide">EyeGuide</a>.
-                Designer & developer of hardware & software products.
-              </p>
+              <h1
+                className="xl"
+                sx={{
+                  fontWeight: 800
+                }}
+              >
+                Greg Gamel
+              </h1>
+              <br />
+              <p>Designer & developer of hardware & software products.</p>
               <p>Team Player. Teaches. No-Fuss. 💚s Green Chile.</p>
-              <ul>
-                <li>
-                  <a href="https://twitter.com/ggamel">Twitter</a>
-                </li>
-                <li>
-                  <a href="https://github.com/ggamel">GitHub</a>
-                </li>
-                <li>
-                  <a href="mailto:g@greg.is">✍️ Email</a>
-                </li>
-              </ul>
+              <br />
+              <p>
+                Founded &amp; currently building{" "}
+                <a href="https://eye.guide">EyeGuide</a>.
+              </p>
             </main>
           </article>
         </Box>
