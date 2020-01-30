@@ -30,7 +30,10 @@ const IndexPage = ({ headerActive }) => {
               minHeight: "100vh",
               width: "100%",
               maxWidth: "1024px",
-              margin: "0 auto"
+              margin: "0 auto",
+              pt: 5,
+              pr: 4,
+              pl: 4
             }}
           >
             <main>
