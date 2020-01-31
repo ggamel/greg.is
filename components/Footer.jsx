@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, useColorMode, Styled } from "theme-ui";
+import { jsx, useColorMode, Styled, Flex, Box } from "theme-ui";
 
 import Link from "./Link";
 
@@ -76,27 +76,15 @@ const Footer = ({}) => {
           </div>
         </footer>
       </div>
-      <div
+      <Flex
         sx={{
-          display: "flex",
           justifyContent: "space-between",
           p: 3
         }}
       >
-        {/* <div
+        <Flex
           sx={{
-            display: "flex",
-            // flexDirection: "column",
-            justifyContent: "flex-end",
-            alignItems: "flex-end;"
-          }}
-        > */}
-        <div
-          sx={{
-            display: "flex",
             order: 1
-            // justifyContent: "flex-end",
-            // alignItems: "flex-end;"
           }}
         >
           <a
@@ -123,16 +111,15 @@ const Footer = ({}) => {
           <a href="mailto:g@greg.is" sx={{ color: "inherit" }}>
             Email
           </a>
-        </div>
-        <div
+        </Flex>
+        <Box
           sx={{
             order: 0
           }}
         >
           © 2020 Greg Gamel
-        </div>
-        {/* </div> */}
-      </div>
+        </Box>
+      </Flex>
     </div>
   );
 };
