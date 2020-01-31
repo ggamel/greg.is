@@ -10,6 +10,8 @@ const vars = css`
       rgb(114, 4, 193) 100%
     );
 
+    --subtle-grad: linear-gradient(180deg, #000 -30%, #101);
+
     --t0: 4.5rem;
     --t1: 4rem;
     --t2: 2.5rem;

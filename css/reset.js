@@ -84,6 +84,10 @@ const reset = css`
 
   // additions
 
+  body {
+    background: #010101;
+  }
+
   a {
     -webkit-text-decoration: underline;
     text-decoration: underline;

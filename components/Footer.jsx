@@ -8,8 +8,8 @@ const Footer = ({}) => {
   return (
     <div
       sx={{
-        borderTop: mode === "dark" ? "1px solid #333" : "1px solid #eee",
-        background: mode === "dark" ? "#000" : "#fff" // logic left for changes later
+        borderTop: mode === "dark" ? "1px solid #313131" : "1px solid #e6e6e6",
+        background: mode === "dark" ? "#010101" : "#fafafa" // logic left for changes later
       }}
     >
       <div
@@ -79,35 +79,59 @@ const Footer = ({}) => {
       <div
         sx={{
           display: "flex",
-          justifyContent: "flex-end",
+          justifyContent: "space-between",
           p: 3
         }}
       >
-        <a
+        {/* <div
           sx={{
-            textAlign: "center",
-            textDecoration: "none",
-            pr: 3
+            display: "flex",
+            // flexDirection: "column",
+            justifyContent: "flex-end",
+            alignItems: "flex-end;"
           }}
-          onClick={e => {
-            const next = mode === "dark" ? "light" : "dark";
-            setMode(next);
+        > */}
+        <div
+          sx={{
+            display: "flex",
+            order: 1
+            // justifyContent: "flex-end",
+            // alignItems: "flex-end;"
           }}
         >
-          {mode === "dark" ? "🔆" : "🌙"}
-        </a>
-        <a href="https://github.com/ggamel" sx={{ color: "inherit" }}>
-          <Styled.a>GitHub</Styled.a>
-        </a>
-        <div sx={{ mx: 1 }} />
-        <a href="https://twitter.com/ggamel" sx={{ color: "inherit" }}>
-          <Styled.a>Twitter</Styled.a>
-        </a>
-        <div sx={{ mx: 1 }} />
-        <a href="mailto:g@greg.is" sx={{ color: "inherit" }}>
-          <Styled.a>Email</Styled.a>
-        </a>
-        <div sx={{ mx: 1 }} />© 2020 Greg Gamel
+          <a
+            sx={{
+              textAlign: "center",
+              textDecoration: "none",
+              pr: 3
+            }}
+            onClick={e => {
+              const next = mode === "dark" ? "light" : "dark";
+              setMode(next);
+            }}
+          >
+            {mode === "dark" ? "🔆" : "🌙"}
+          </a>
+          <a href="https://github.com/ggamel" sx={{ color: "inherit" }}>
+            GitHub
+          </a>
+          <div sx={{ mx: 1 }} />
+          <a href="https://twitter.com/ggamel" sx={{ color: "inherit" }}>
+            Twitter
+          </a>
+          <div sx={{ mx: 1 }} />
+          <a href="mailto:g@greg.is" sx={{ color: "inherit" }}>
+            Email
+          </a>
+        </div>
+        <div
+          sx={{
+            order: 0
+          }}
+        >
+          © 2020 Greg Gamel
+        </div>
+        {/* </div> */}
       </div>
     </div>
   );

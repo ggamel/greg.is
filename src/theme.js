@@ -5,8 +5,8 @@ export default {
   colors: {
     modes: {
       dark: {
-        text: "#fff",
-        background: "#000"
+        text: "#fafafa",
+        background: "#010101"
       },
       light: {
         text: "#222",

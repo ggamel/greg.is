@@ -23,12 +23,15 @@ const Header = ({ children }) => {
         gridAutoFlow: "row",
         gridTemplateColumns: ["repeat(2, 1fr)", "repeat(3, 1fr)"],
         variant: "styles.header",
-        borderBottom: mode === "dark" ? "1px solid #222" : "1px solid #eee",
+        borderBottom:
+          mode === "dark" ? "1px solid #313131" : "1px solid hsl(0, 0%, 90%)",
+        backgroundColor:
+          mode === "dark"
+            ? "hsla(0, 0%, 0%, 0.001)"
+            : "hsla(0, 0%, 95%, 0.001)",
         position: "sticky",
         top: 0,
         zIndex: 100
-        // backgroundColor:
-        //   mode === "dark" ? "rgba(0,0,0,0.1)" : "rgba(255,255,255,0.1)"
       }}
       css={header}
     >
