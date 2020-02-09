@@ -19,13 +19,22 @@ const AboutPage = () => {
             minHeight: '100vh',
           }}
         >
-          <Grid>
+          <Box
+            sx={{
+              display: 'grid',
+              gridTemplateColumns:
+                'minmax(1.2rem, 1fr) minmax(auto, 66ch) minmax(1.2rem, 1fr);',
+              '*': {
+                gridColumn: 2,
+              },
+            }}
+          >
             <h1>About Greg</h1>
             <p>
               Greg is a designer and developer. Creating hardware and software
               projects, [write more later]{' '}
             </p>
-          </Grid>
+          </Box>
         </Box>
       </Page>
       <Footer />

@@ -26,22 +26,33 @@ const IndexPage = ({ headerActive }) => {
             minHeight: '100vh',
           }}
         >
-          <h1
+          <Box
             sx={{
-              fontWeight: 800,
+              display: 'grid',
+              gridTemplateColumns:
+                'minmax(1.2rem, 1fr) minmax(auto, 66ch) minmax(1.2rem, 1fr);',
+              '*': {
+                gridColumn: 2,
+              },
             }}
-            className="xl"
           >
-            Greg Gamel
-          </h1>
-          <br />
-          <p>Designer & developer of hardware & software products.</p>
-          <p>Team Player. Teaches. No-Fuss. 💚s Green Chile.</p>
-          <br />
-          <p>
-            Founded &amp; currently building{' '}
-            <a href="https://eye.guide">EyeGuide</a>.
-          </p>
+            <h1
+              sx={{
+                fontWeight: 800,
+              }}
+              className="xl"
+            >
+              Greg Gamel
+            </h1>
+            <br />
+            <p>Developer & designer of hardware & software.</p>
+            <p>Team Player. Teaches. No-Fuss. 💚s Green Chile.</p>
+            <br />
+            <p>
+              Founded &amp; currently building{' '}
+              <a href="https://eye.guide">EyeGuide</a>.
+            </p>
+          </Box>
         </Box>
       </Page>
 
