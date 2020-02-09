@@ -1,14 +1,14 @@
 /** @jsx jsx */
-import { jsx, Styled, useColorMode } from "theme-ui";
-import Link from "next/link";
+import { jsx, Styled, useColorMode } from 'theme-ui';
+import Link from 'next/link';
 
-import { SkipNavContent } from "@reach/skip-nav";
+import { SkipNavContent } from '@reach/skip-nav';
 
-import Page from "../components/Page";
-import Header from "../components/Header";
-import Logo from "../components/Logo";
-import Footer from "../components/Footer";
-import Nav from "../components/Nav";
+import Page from '../components/Page';
+import Header from '../components/Header';
+import Logo from '../components/Logo';
+import Footer from '../components/Footer';
+import Nav from '../components/Nav';
 
 const StylesPage = ({ headerActive }) => (
   <>

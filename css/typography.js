@@ -1,10 +1,10 @@
 /** @jsx jsx */
-import { css } from "@emotion/core";
+import { css } from '@emotion/core';
 
 const typography = css`
   html {
     text-rendering: optimizeLegibility;
-    font-feature-settings: "kern" 1;
+    font-feature-settings: 'kern' 1;
     font-kerning: normal;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

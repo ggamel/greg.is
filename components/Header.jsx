@@ -1,9 +1,9 @@
 /** @jsx jsx */
-import { jsx, css, Styled, useColorMode } from "theme-ui";
+import { jsx, css, Styled, useColorMode } from 'theme-ui';
 
-import Link from "./Link";
+import Link from './Link';
 
-import Logo from "../components/Logo";
+import Logo from './Logo';
 
 const header = css`
   -webkit-backdrop-filter: saturate(100%) blur(40px);
@@ -15,34 +15,34 @@ const Header = ({ children }) => {
   return (
     <header
       sx={{
-        display: "grid",
+        display: 'grid',
         gridGap: 3,
-        mx: "auto",
+        mx: 'auto',
         px: 2,
         py: 2,
-        gridAutoFlow: "row",
-        gridTemplateColumns: ["repeat(2, 1fr)", "repeat(3, 1fr)"],
-        variant: "styles.header",
+        gridAutoFlow: 'row',
+        gridTemplateColumns: ['repeat(2, 1fr)', 'repeat(3, 1fr)'],
+        variant: 'styles.header',
         borderBottom:
-          mode === "dark" ? "1px solid #313131" : "1px solid hsl(0, 0%, 90%)",
+          mode === 'dark' ? '1px solid #313131' : '1px solid hsl(0, 0%, 90%)',
         backgroundColor:
-          mode === "dark"
-            ? "hsla(0, 0%, 0%, 0.001)"
-            : "hsla(0, 0%, 95%, 0.001)",
-        position: "sticky",
+          mode === 'dark'
+            ? 'hsla(0, 0%, 0%, 0.001)'
+            : 'hsla(0, 0%, 95%, 0.001)',
+        position: 'sticky',
         top: 0,
-        zIndex: 100
+        zIndex: 100,
       }}
       css={header}
     >
       <div
         sx={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
           gridColumnStart: [1, 2],
           gridColumnEnd: [3, 3],
-          order: [0, 1]
+          order: [0, 1],
         }}
       >
         <Link href="/">
@@ -50,11 +50,11 @@ const Header = ({ children }) => {
             <Logo />
             <span
               sx={{
-                position: "absolute",
+                position: 'absolute',
                 width: 1,
                 height: 1,
-                overflow: "hidden",
-                top: -9999
+                overflow: 'hidden',
+                top: -9999,
               }}
             >
               Home
@@ -64,16 +64,16 @@ const Header = ({ children }) => {
       </div>
       <div
         sx={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "flex-start"
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'flex-start',
         }}
       >
         <Link href="/about">
           <Styled.a
             sx={{
-              variant: "styles.navlink",
-              p: 2
+              variant: 'styles.navlink',
+              p: 2,
             }}
           >
             About
@@ -82,8 +82,8 @@ const Header = ({ children }) => {
         <Link href="/writing">
           <Styled.a
             sx={{
-              variant: "styles.navlink",
-              p: 2
+              variant: 'styles.navlink',
+              p: 2,
             }}
           >
             Writing
@@ -92,17 +92,17 @@ const Header = ({ children }) => {
       </div>
       <div
         sx={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "flex-end",
-          order: 2
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'flex-end',
+          order: 2,
         }}
       >
         <Link href="/projects">
           <Styled.a
             sx={{
-              variant: "styles.navlink",
-              p: 2
+              variant: 'styles.navlink',
+              p: 2,
             }}
           >
             Projects
@@ -111,8 +111,8 @@ const Header = ({ children }) => {
         <Link href="/work">
           <Styled.a
             sx={{
-              variant: "styles.navlink",
-              p: 2
+              variant: 'styles.navlink',
+              p: 2,
             }}
           >
             Work

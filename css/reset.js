@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { css } from "@emotion/core";
+import { css } from '@emotion/core';
 
 const reset = css`
   /* A modern CSS reset (https://github.com/hankchizljaw/modern-css-reset) */

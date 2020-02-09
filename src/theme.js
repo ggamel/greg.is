@@ -1,85 +1,85 @@
 export default {
   useCustomProperties: true,
   useColorSchemeMediaQuery: true,
-  initialColorModeName: "dark",
+  initialColorModeName: 'dark',
   colors: {
     modes: {
       dark: {
-        text: "#fafafa",
-        background: "#010101"
+        text: '#fafafa',
+        background: '#010101',
       },
       light: {
-        text: "#222",
-        background: "#fff"
-      }
-    }
+        text: '#222',
+        background: '#fff',
+      },
+    },
   },
   fontSizes: [12, 14, 16, 18, 24, 32, 48, 64, 72],
   fonts: {
     body:
       "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif",
-    heading: "inherit"
+    heading: 'inherit',
   },
   lineHeights: {
     body: 4,
-    heading: 8
+    heading: 8,
   },
   styles: {
     root: {
-      fontFamily: "body",
-      color: "text",
-      bg: "background"
+      fontFamily: 'body',
+      color: 'text',
+      bg: 'background',
     },
     h1: {
       fontSize: 5,
-      color: "primary"
+      color: 'primary',
     },
     h2: {
-      fontSize: 4
+      fontSize: 4,
     },
     h3: {
-      fontSize: 3
+      fontSize: 3,
     },
     h4: {
-      fontSize: 2
+      fontSize: 2,
     },
     h5: {
-      fontSize: 1
+      fontSize: 1,
     },
     h6: {
-      fontSize: 0
+      fontSize: 0,
     },
     pre: {
-      fontFamily: "monospace",
-      overflowX: "auto",
+      fontFamily: 'monospace',
+      overflowX: 'auto',
       code: {
-        color: "inherit"
-      }
+        color: 'inherit',
+      },
     },
     code: {
-      fontFamily: "monospace",
-      fontSize: "inherit"
+      fontFamily: 'monospace',
+      fontSize: 'inherit',
     },
     table: {
-      width: "100%",
-      borderCollapse: "separate",
-      borderSpacing: 0
+      width: '100%',
+      borderCollapse: 'separate',
+      borderSpacing: 0,
     },
     th: {
-      textAlign: "left",
-      borderBottomStyle: "solid"
+      textAlign: 'left',
+      borderBottomStyle: 'solid',
     },
     td: {
-      textAlign: "left",
-      borderBottomStyle: "solid"
+      textAlign: 'left',
+      borderBottomStyle: 'solid',
     },
     a: {
-      color: "primary",
-      textDecoration: "none",
-      ":hover": {
-        color: "secondary",
-        textDecoration: "underline"
-      }
-    }
-  }
+      color: 'primary',
+      textDecoration: 'none',
+      ':hover': {
+        color: 'secondary',
+        textDecoration: 'underline',
+      },
+    },
+  },
 };

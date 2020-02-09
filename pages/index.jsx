@@ -1,13 +1,13 @@
 /** @jsx jsx */
-import { jsx, useColorMode, Box } from "theme-ui";
-import Link from "next/link";
+import { jsx, useColorMode, Box } from 'theme-ui';
+import Link from 'next/link';
 
-import { SkipNavContent } from "@reach/skip-nav";
+import { SkipNavContent } from '@reach/skip-nav';
 
-import Page from "../components/Page";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import { Global } from "@emotion/core";
+import { Global } from '@emotion/core';
+import Page from '../components/Page';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 // import Nav from "../components/Nav";
 
@@ -21,40 +21,27 @@ const IndexPage = ({ headerActive }) => {
 
         <Box
           sx={{
-            background: mode === "dark" ? "#101010" : "#f5f5f5",
-            pb: "1px"
+            background: mode === 'dark' ? '#101010' : '#f5f5f5',
+            pb: '1px',
+            minHeight: '100vh',
           }}
         >
-          <article
+          <h1
             sx={{
-              minHeight: "100vh",
-              width: "100%",
-              maxWidth: "1024px",
-              margin: "0 auto",
-              pt: 5,
-              pr: 4,
-              pl: 4
+              fontWeight: 800,
             }}
+            className="xl"
           >
-            <main>
-              <h1
-                className="xl"
-                sx={{
-                  fontWeight: 800
-                }}
-              >
-                Greg Gamel
-              </h1>
-              <br />
-              <p>Designer & developer of hardware & software products.</p>
-              <p>Team Player. Teaches. No-Fuss. 💚s Green Chile.</p>
-              <br />
-              <p>
-                Founded &amp; currently building{" "}
-                <a href="https://eye.guide">EyeGuide</a>.
-              </p>
-            </main>
-          </article>
+            Greg Gamel
+          </h1>
+          <br />
+          <p>Designer & developer of hardware & software products.</p>
+          <p>Team Player. Teaches. No-Fuss. 💚s Green Chile.</p>
+          <br />
+          <p>
+            Founded &amp; currently building{' '}
+            <a href="https://eye.guide">EyeGuide</a>.
+          </p>
         </Box>
       </Page>
 
