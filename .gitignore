@@ -67,6 +67,7 @@ yarn-error.log
 
 # VS Code
 .history
+.vscode/
 
 # Netlify
 .netlify/
