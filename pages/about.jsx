@@ -1,3 +1,4 @@
+/** @jsx jsx */
 import { jsx, useColorMode, Box, Container, Grid } from 'theme-ui';
 import { SkipNavContent } from '@reach/skip-nav';
 

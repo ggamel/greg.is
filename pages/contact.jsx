@@ -1,3 +1,4 @@
+/** @jsx jsx */
 import {
   Container,
   Label,
