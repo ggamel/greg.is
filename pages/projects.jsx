@@ -27,6 +27,7 @@ const ProjectsPage = () => {
               '*': {
                 gridColumn: 2,
               },
+              pt: 5,
             }}
           >
             <h1>Projects</h1>

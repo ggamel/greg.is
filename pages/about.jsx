@@ -27,6 +27,7 @@ const AboutPage = () => {
               '*': {
                 gridColumn: 2,
               },
+              pt: 5,
             }}
           >
             <h1>About Greg</h1>

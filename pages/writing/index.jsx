@@ -23,11 +23,13 @@ const WritingPage = () => {
           <Box
             sx={{
               display: 'grid',
+
               gridTemplateColumns:
                 'minmax(1.2rem, 1fr) minmax(auto, 66ch) minmax(1.2rem, 1fr);',
               '*': {
                 gridColumn: 2,
               },
+              pt: 5,
             }}
           >
             <h1>Writing</h1>
