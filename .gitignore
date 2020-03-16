@@ -74,3 +74,6 @@ yarn-error.log
 
 # Next.js
 .next
+
+# Ignore next-mdx-enhanced cache directory
+.mdx-data
