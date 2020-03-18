@@ -1,14 +1,14 @@
 /** @jsx jsx */
-import { css, jsx, Styled, useColorMode, Container, Grid, Box } from 'theme-ui';
+import { jsx, useColorMode, Box } from 'theme-ui';
 import { SkipNavContent } from '@reach/skip-nav';
 
-import Page from '../../components/Page';
+import Page from '../components/Page';
 
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 const WritingPage = () => {
-  const [mode, setMode] = useColorMode();
+  const [mode] = useColorMode();
   return (
     <>
       <Page title="Writing | Greg Gamel">
