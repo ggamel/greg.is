@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, css, Styled, useColorMode } from 'theme-ui';
+import { jsx, css, Styled, useColorMode, NavLink } from 'theme-ui';
 
 import Link from './Link';
 
@@ -46,7 +46,7 @@ const Header = ({ children }) => {
         }}
       >
         <Link href="/">
-          <Styled.a>
+          <Styled.a sx={{ height: '24px' }}>
             <Logo />
             <span
               sx={{
@@ -72,8 +72,8 @@ const Header = ({ children }) => {
         <Link href="/about">
           <Styled.a
             sx={{
-              variant: 'styles.navlink',
               p: 2,
+              fontWeight: '600',
             }}
           >
             About
@@ -82,8 +82,8 @@ const Header = ({ children }) => {
         <Link href="/writing">
           <Styled.a
             sx={{
-              variant: 'styles.navlink',
               p: 2,
+              fontWeight: '600',
             }}
           >
             Writing
@@ -101,8 +101,8 @@ const Header = ({ children }) => {
         <Link href="/projects">
           <Styled.a
             sx={{
-              variant: 'styles.navlink',
               p: 2,
+              fontWeight: '600',
             }}
           >
             Projects
@@ -111,8 +111,8 @@ const Header = ({ children }) => {
         <Link href="/work">
           <Styled.a
             sx={{
-              variant: 'styles.navlink',
               p: 2,
+              fontWeight: '600',
             }}
           >
             Work

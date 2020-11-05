@@ -82,4 +82,15 @@ export default {
       },
     },
   },
+  links: {
+    bold: {
+      fontWeight: 'bold',
+    },
+    nav: {
+      px: 2,
+      py: 1,
+      textTransform: 'uppercase',
+      letterSpacing: '0.2em',
+    },
+  },
 };

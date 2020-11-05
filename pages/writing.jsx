@@ -1,4 +1,6 @@
 /** @jsx jsx */
+import Link from 'next/link';
+
 import { jsx, useColorMode, Box } from 'theme-ui';
 import { SkipNavContent } from '@reach/skip-nav';
 
@@ -7,8 +9,12 @@ import Page from '../components/Page';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
+import { frontMatter as aData } from './writing/writea.mdx';
+import { frontMatter as bData } from './writing/writeb.mdx';
+
 const WritingPage = () => {
   const [mode] = useColorMode();
+  const writePages = [aData, bData];
   return (
     <>
       <Page title="Writing | Greg Gamel">
@@ -33,8 +39,16 @@ const WritingPage = () => {
               pt: 5,
             }}
           >
-            <h1>Writing</h1>
-            <p>coming soon</p>
+            <h1>Docs Index</h1>
+            <ul>
+              {writePages.map(page => (
+                <li key={page.__resourcePath}>
+                  <Link href={formatPath(page.__resourcePath)}>
+                    <a>{page.title}</a>
+                  </Link>
+                </li>
+              ))}
+            </ul>
             <hr />
           </Box>
         </Box>
@@ -43,5 +57,9 @@ const WritingPage = () => {
     </>
   );
 };
+
+function formatPath(p) {
+  return p.replace(/\.mdx$/, '');
+}
 
 export default WritingPage;

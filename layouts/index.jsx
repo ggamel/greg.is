@@ -1,16 +1,16 @@
 /** @jsx jsx */
-import { jsx, useColorMode, Box, Container, Grid } from 'theme-ui';
+import { jsx, Box, useColorMode } from 'theme-ui';
 import { SkipNavContent } from '@reach/skip-nav';
 
 import Page from '../components/Page';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
-const AboutPage = () => {
+const Layout = () => {
   const [mode, setMode] = useColorMode();
   return (
     <>
-      <Page title="About | Greg Gamel">
+      <Page title="Work | Greg Gamel">
         <SkipNavContent tabIndex="0" />
         <Header />
         <Box
@@ -31,22 +31,8 @@ const AboutPage = () => {
               pt: 5,
             }}
           >
-            <h1>About Greg</h1>
-            <p>
-              Greg is a designer and developer. Creating hardware and software
-              projects, [write more later]{' '}
-            </p>
-
-            <h2>Bio</h2>
-            <img src="https://placekitten.com/512/512" />
-            <p>bio here</p>
-            <p>bio here</p>
-            <p>bio here</p>
-
-            <h2>What I do</h2>
-            <p>do stuff here</p>
-            <p>do stuff here</p>
-            <p>do stuff here</p>
+            <h1>{frontMatter.title}</h1>
+            {content}
           </Box>
         </Box>
       </Page>
@@ -55,4 +41,4 @@ const AboutPage = () => {
   );
 };
 
-export default AboutPage;
+export default Layout;
