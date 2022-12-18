@@ -47,13 +47,8 @@ const IndexPage = ({ headerActive }) => {
               Greg Gamel
             </h1>
             <br />
-            <p>Developer & designer of hardware & software.</p>
-            <p>Team Player. Teaches. No-Fuss. 💚s Green Chile.</p>
-            <br />
-            <p>
-              Founded &amp; currently building{' '}
-              <a href="https://eye.guide">EyeGuide</a>.
-            </p>
+            <p>👨‍💻 I make websites, software, & hardware 🧠 Always learning 🧪 TBD</p>
+
           </Box>
         </Box>
       </Page>
